@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Decision Support Word Parser</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+</head>
+<body>
+        <!--The program should take in a string then, tell how many unique words are in the string
+        Produce a list of the words in the string in alphabetical order
+        Do a count of how often that word shows up in the string-->
+    <div class="container-fluid">
+        <!--Header -->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-3">Decision Support Word Parser</h1>
+                <p class="lead">Enter a string below to find out more information about it.</p>
+            </div>
+            <!--Area for inputting string-->
+            <div class="col-lg-12">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="stringInput" placeholder="Input string here..." aria-label="Input string here...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-secondary" type="button" id="submit">Go!</button>
+                    </span>
+                </div>
+            </div>
+        </div><hr>
+
+        <!--Area for results of string parsing-->
+        <div class="row" style="text-align:center">
+            <div class="col-lg-4" id="unique">Unique Words in String</div>
+            <div class="col-lg-4" id="alpha">String in Alphabetical Order</div>
+            <div class="col-lg-4" id="timesAppear">How often each word shows up in string</div>
+        </div>
+        <!--Area for strings used already-->
+        <div class="row" style="text-align: center">
+            <div class="col-lg-12" id="prevStrings">
+                Previously used strings
+            </div>
+        </div>
+    </div>
+    <footer style="text-align: center">By: John Leverett</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="parser.js"></script>
+
+</body>
+</html>
