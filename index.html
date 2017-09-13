@@ -7,7 +7,7 @@
     <title>Decision Support Word Parser</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
         <!--The program should take in a string then, tell how many unique words are in the string
@@ -32,15 +32,23 @@
         </div><hr>
 
         <!--Area for results of string parsing-->
-        <div class="row" style="text-align:center">
-            <div class="col-lg-4" id="unique">Unique Words in String</div>
-            <div class="col-lg-4" id="alpha">String in Alphabetical Order</div>
-            <div class="col-lg-4" id="timesAppear">How often each word shows up in string</div>
+        <div class="row" style="text-align:center" id="stage">
+            <div class="col-lg-4" id="unique">
+                <h4>Unique Words in String</h4>
+            </div>
+            <div class="col-lg-4">
+                <h4>String in Alphabetical Order</h4>
+                <div id="alpha"></div>    
+            </div>
+            <div class="col-lg-4" id="timesAppear">
+                <h4>Word Counter</h4>
+            </div>
         </div>
         <!--Area for strings used already-->
         <div class="row" style="text-align: center">
-            <div class="col-lg-12" id="prevStrings">
-                Previously used strings
+            <div class="col-lg-12">
+                <h5>Previously used strings</h5>
+                <div id="prevStrings"></div>
             </div>
         </div>
     </div>
