@@ -35,7 +35,6 @@ function unique(arr){
     }
     for(var key in tempObj)
     uniqueArray.push(key);
-    console.log(tempObj);
     document.getElementById("uniqueCount").innerHTML = uniqueArray.length;
     return(uniqueArray);
     };
