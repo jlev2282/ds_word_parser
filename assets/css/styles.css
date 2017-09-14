@@ -10,3 +10,12 @@ footer {
     width: 100%;
     overflow:hidden;
 }
+
+@media only screen and (max-width: 500px) {
+    footer {
+        position: relative;
+    }
+    /*#stage {
+        position: static;
+    }*/
+}
