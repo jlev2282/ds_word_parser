@@ -13,7 +13,7 @@ footer {
 
 @media only screen and (max-width: 500px) {
     footer {
-        position: static;
+        position: relative;
         height: 5%;
     }
     #stage {
