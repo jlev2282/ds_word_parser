@@ -1,8 +1,7 @@
 $(document).ready(function(){
 //Define variables for arrays
 var stringArray=[];
-uniqueWordArray=[];
-usedStrings=[];
+var usedStrings=[];
 
 // Take input and enter it into an stringArray
 $("#submit").on("click", function(event){
@@ -44,11 +43,6 @@ function alphaString(){
     stringArray.sort();
     document.getElementById("alpha").innerHTML = stringArray;
     return(stringArray);
-};
-
-// function that places current string into usedStrings array
-function prevStrings(){
-    usedStrings.push(document.getElementById("stringInput").value);
 };
 
 });
