@@ -2,14 +2,16 @@ $(document).ready(function(){
 //Define variables for arrays
 var stringArray=[];
 var usedStrings=[];
+var uniqueArray=[];
 
-// Take input and enter it into an stringArray
+// click event listener to start page functions
 $("#submit").on("click", function(event){
+    uniqueArray=[];
     event.preventDefault();
     grabInput();
     alphaString();
     unique(stringArray);
-    
+    wordCount(stringArray, uniqueArray);
 });
 
 //function that grabs input and splits into array of substrings
@@ -31,11 +33,11 @@ function unique(arr){
         tempObj[arr[i]]=j;
         j++;
     }
-    var uniqueArray=[];
     for(var key in tempObj)
     uniqueArray.push(key);
-    console.log(uniqueArray);
+    console.log(tempObj);
     document.getElementById("uniqueCount").innerHTML = uniqueArray.length;
+    return(uniqueArray);
     };
 
 // function that puts stringArray into alphabhetical order
@@ -44,5 +46,29 @@ function alphaString(){
     document.getElementById("alpha").innerHTML = stringArray;
     return(stringArray);
 };
+
+//function that breaks the string into an object with number of occurences
+function wordCount(arr,arr2){
+    countArray=[];
+    result = { };
+
+    for(var i = 0; i < arr.length; ++i) {
+        if(!result[arr[i]])
+            result[arr[i]] = 0;
+        ++result[arr[i]];
+        };
+    for(var key in result)
+    countArray.push(key);
+
+    countArray2=[];
+
+    for(var i = 0; i < arr2.length; ++i) {
+        value=result[arr2[i]];
+        countArray2.push(value);
+        };
+
+    document.getElementById("timesAppear").innerHTML = countArray;
+    document.getElementById("timesAppear2").innerHTML = countArray2;
+    };
 
 });
