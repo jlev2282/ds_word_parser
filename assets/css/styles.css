@@ -17,7 +17,7 @@ footer {
         height: 5%;
     }
     #stage {
-        position: relative;
+        position: static;
         height: 10%;
     }
 }
