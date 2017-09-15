@@ -6,7 +6,7 @@ var uniqueArray=[];
 
 // click event listener to start page functions
 $("#submit").on("click", function(event){
-    uniqueArray=[];
+    uniqueArray=[];//empties array after previous submits
     event.preventDefault();
     grabInput();
     alphaString();
