@@ -18,10 +18,19 @@ $("#submit").on("click", function(event){
 function grabInput(){
     //grab value of input from stringInput
     string1=document.getElementById("stringInput").value;
+    string2=string1.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+    string3=string2.replace(/\s{2,}/g," ");
     usedStrings.push(string1);
     document.getElementById("prevStrings").innerHTML = usedStrings;
     //parse string into an array of substrings equal to stringArray
-    stringArray=string1.split(' ');
+    stringArray=string3.split(' ');
+    return(stringArray);
+};
+
+// function that puts stringArray into alphabhetical order
+function alphaString(){
+    stringArray.sort();
+    document.getElementById("alpha").innerHTML = stringArray;
     return(stringArray);
 };
 
@@ -38,13 +47,6 @@ function unique(arr){
     document.getElementById("uniqueCount").innerHTML = uniqueArray.length;
     return(uniqueArray);
     };
-
-// function that puts stringArray into alphabhetical order
-function alphaString(){
-    stringArray.sort();
-    document.getElementById("alpha").innerHTML = stringArray;
-    return(stringArray);
-};
 
 //function that breaks the string into an object with number of occurences
 function wordCount(arr,arr2){

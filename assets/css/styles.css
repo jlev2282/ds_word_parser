@@ -20,6 +20,9 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
+    #jumbo {
+        height: 20%;
+    }
     footer {
         position: relative;
         height: 10%;
