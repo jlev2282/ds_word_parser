@@ -20,10 +20,11 @@ function grabInput(){
     string1=document.getElementById("stringInput").value;
     string2=string1.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
     string3=string2.replace(/\s{2,}/g," ");
+    string4=string3.toLowerCase();
     usedStrings.push(string1);
     document.getElementById("prevStrings").innerHTML = usedStrings;
     //parse string into an array of substrings equal to stringArray
-    stringArray=string3.split(' ');
+    stringArray=string4.split(' ');
     return(stringArray);
 };
 
@@ -70,7 +71,7 @@ function wordCount(arr,arr2){
         
         array3=[];
     for (var i=0; i<countArray.length; ++i) {
-        current = countArray[i]+"("+countArray2[i]+")";
+        current = " "+countArray[i]+"("+countArray2[i]+")";
         theParent = document.getElementById("timesAppear");
         array3.push(current);
     };

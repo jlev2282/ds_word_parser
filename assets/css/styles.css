@@ -1,12 +1,12 @@
 #jumbo {
-    opacity: .9;
+    /*opacity: .9;*/
 }
 
 #stage {
     min-height:15vh;
     height: 15vh;
-    background-color: lightblue;
     clear: both;
+    /*background-image: url("../images/dslogo.png");*/
 }
 
 footer {
