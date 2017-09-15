@@ -1,5 +1,8 @@
 #stage {
-    height: 20vh
+    min-height:15vh;
+    height: 15vh;
+    background-color: blue;
+    clear: both;
 }
 
 footer {
@@ -9,6 +12,11 @@ footer {
     height: 10vh;
     width: 100%;
     overflow:hidden;
+}
+
+#prev {
+    min-height: 15vh;
+    background-color: yellow;
 }
 
 @media only screen and (max-width: 500px) {
