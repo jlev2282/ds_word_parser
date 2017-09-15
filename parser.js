@@ -67,9 +67,15 @@ function wordCount(arr,arr2){
         value=result[arr2[i]];
         countArray2.push(value);
         };
+        
+        array3=[];
+    for (var i=0; i<countArray.length; ++i) {
+        current = countArray[i]+"("+countArray2[i]+")";
+        theParent = document.getElementById("timesAppear");
+        array3.push(current);
+    };
+       document.getElementById("timesAppear").innerHTML = array3; 
 
-    document.getElementById("timesAppear").innerHTML = countArray;
-    document.getElementById("timesAppear2").innerHTML = countArray2;
     };
 
 });

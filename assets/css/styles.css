@@ -1,12 +1,16 @@
+#jumbo {
+    opacity: .9;
+}
+
 #stage {
     min-height:15vh;
     height: 15vh;
-    background-color: blue;
+    background-color: lightblue;
     clear: both;
 }
 
 footer {
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: 0;
     height: 10vh;
@@ -16,7 +20,10 @@ footer {
 
 #prev {
     min-height: 15vh;
-    background-color: yellow;
+}
+#timesAppear, #alpha, #prevStrings {
+    word-wrap: break-word;
+    text-align: center;
 }
 
 @media only screen and (max-width: 500px) {
