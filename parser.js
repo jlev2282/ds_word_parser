@@ -43,11 +43,13 @@ function unique(arr){
         tempObj[arr[i]]=j;
         j++;
     }
+    console.log(tempObj);
     for(var key in tempObj)
     uniqueArray.push(key);
     document.getElementById("uniqueCount").innerHTML = uniqueArray.length;
     return(uniqueArray);
     };
+
 
 //function that breaks the string into an object with number of occurences
 function wordCount(arr,arr2){
