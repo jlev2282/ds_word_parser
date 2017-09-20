@@ -1,11 +1,7 @@
-#jumbo {
-    /*opacity: .9;*/
-}
 
 #stage {
     position: relative;
     min-height:15vh;
-    height: 15vh;
     clear: both;
     /*background-image: url("../images/dslogo.png");*/
 }
