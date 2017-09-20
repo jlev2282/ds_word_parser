@@ -56,6 +56,7 @@ function wordCount(arr,arr2){
     countArray=[];
     result = { };
 
+    // checks for word in result obj and adds it if absent
     for(var i = 0; i < arr.length; ++i) {
         if(!result[arr[i]])
             result[arr[i]] = 0;
@@ -66,12 +67,14 @@ function wordCount(arr,arr2){
 
     countArray2=[];
 
+    // collects counts of each word in result obj and adds to own array
     for(var i = 0; i < arr2.length; ++i) {
         value=result[arr2[i]];
         countArray2.push(value);
         };
         
         array3=[];
+        // pulls key and value and adds to html document
     for (var i=0; i<countArray.length; ++i) {
         current = " "+countArray[i]+"("+countArray2[i]+")";
         theParent = document.getElementById("timesAppear");
